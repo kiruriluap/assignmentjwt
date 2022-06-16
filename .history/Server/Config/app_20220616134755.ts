@@ -20,7 +20,7 @@ import cors from 'cors';
 let localStrategy = passportLocal.Strategy; // alias
 
 // Step 3 for auth - import the user model
-import User from '../Models/user';
+import User from '../odels/user';
 
 // import the router data
 import indexRouter from '../Routes/index'; // top-level routes
