@@ -11,7 +11,7 @@ const BusinessSchema = new Schema
     Address: String
 },
 {
-    collection:"business"
+    collection:"businesses"
 });
 
 //step 3 - create a model using the schema

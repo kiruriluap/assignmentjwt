@@ -10,7 +10,7 @@ const BusinessSchema = new Schema({
     Number: String,
     Address: String
 }, {
-    collection: "businesses"
+    collection: "business"
 });
 const Model = mongoose_1.default.model("Business", BusinessSchema);
 exports.default = Model;
