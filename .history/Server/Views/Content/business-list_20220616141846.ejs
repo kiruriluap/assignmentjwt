@@ -28,11 +28,11 @@
                                 <td><%= businesses[count].Name %></td>
                                 <td><%= businesses[count].Number %></td>
                                 <td><%= businesses[count].Email %></td>
-                               
-                                    <td class="text-center col-1 "> <a class="btn btn-warning" href="/add/<%= businesses[count]._id %> ">
-                                        <i class="fas fa-pencil-alt btn-sm"></i>Edit</a></td>
-                                    <td class="text-center col-1 "> <a class="btn btn-danger" href="/business-list/delete/<%= businesses[count]._id %> ">
-                                    <i class="fas fa-trash-alt btn-sm"></i>Delete</a></td>
+                                <td class="text-center col-1"><a href="/edit/<%= businesses[count]._id %> ">
+                                    <i class="fas fa-pencil-alt btn-sm"></i>Edit</a></td>
+
+                                    <td class="text-center col-1 class=btn btn-danger"> <a class="" href="/business-list/delete/<%= businesses[count]._id %> ">
+                                    <i class="fas fa-trash-alt btn-sm"></i>Edit</a></td>
                             </tr>
                     
                     <%} %>

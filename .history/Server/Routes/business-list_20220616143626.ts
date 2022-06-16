@@ -3,7 +3,7 @@ const router = express.Router();
 
 import { AuthGuard } from '../../Util';
 
-import {DisplayBusinessList, DisplayAddList, ProcessAddList, DisplayEditList, ProcessEditList } from '../controllers/business-list';
+import {DisplayBusinessList, DisplayAddList, ProcessAddList,  } from '../controllers/business-list';
 
 router.get('/business-list', AuthGuard, DisplayBusinessList)
 
@@ -13,7 +13,7 @@ router.post('/add', AuthGuard, ProcessAddList)
 
 router.get('/add', AuthGuard, DisplayEditList)
 
-router.post('/add', AuthGuard, ProcessEditList)
+router.post('/add', AuthGuard, ProcessAddList)
 
 
 export default router;

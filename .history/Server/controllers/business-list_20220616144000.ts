@@ -46,30 +46,31 @@ export function ProcessAddList(req: express.Request, res: express.Response, next
 
 
 
+// export function ProcessEditList(req: express.Request, res: express.Response, next: express.NextFunction)
+// {
+//     let newBusiness = new Business
+//     ({
+//         "Name": req.body.username,
+//         "Number": req.body.number,
+//         "email": req.body.emailAddress
+//     });
+
+//     Business.create(newBusiness, function(err)
+//     {
+//         if(err)
+//         {
+//             console.error(err);
+//             res.end(err);
+//         }
+//         res.redirect('/register');
+//     });
+// };
 export function DisplayEditList(req: express.Request, res: express.Response, next: express.NextFunction)
 {
     res.render('index',{title: 'add Business List', page: 'add', displayName: UserDisplayName(req)});
 }
 
-export function ProcessEditList(req: express.Request, res: express.Response, next: express.NextFunction)
-{
-    let newBusiness = new Business
-    ({
-        "Name": req.body.username,
-        "Number": req.body.number,
-        "email": req.body.emailAddress
-    });
 
-    Business.create(newBusiness, function(err)
-    {
-        if(err)
-        {
-            console.error(err);
-            res.end(err);
-        }
-        res.redirect('/business-list');
-    });
-};
 
 
 

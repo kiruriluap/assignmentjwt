@@ -51,7 +51,7 @@ export function DisplayEditList(req: express.Request, res: express.Response, nex
     res.render('index',{title: 'add Business List', page: 'add', displayName: UserDisplayName(req)});
 }
 
-export function ProcessEditList(req: express.Request, res: express.Response, next: express.NextFunction)
+export function ProcessAddList(req: express.Request, res: express.Response, next: express.NextFunction)
 {
     let newBusiness = new Business
     ({
