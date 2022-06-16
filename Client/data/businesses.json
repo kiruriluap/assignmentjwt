@@ -1,0 +1,19 @@
+{"business contact view":
+    [
+        {
+            "Name": "Ford Doug ",
+            "Number": "4167621587",
+            "Address" : "ford@governor.ca"
+            },
+            {
+                "Name": "John Tory ",            
+                "Number": "6478523614",
+            "Address" : "john@mayor.ca"
+                },
+                {
+                    "Name": "Justin Trudeau ",                
+                    "Number": "4376541367",
+                    "Address" : "justin@premier.ca"
+                    }
+    ]}
+    
