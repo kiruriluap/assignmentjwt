@@ -38,7 +38,7 @@ const db = mongoose.connection; // alias for the mongoose connection
 // Listen for Connections or Errors
 db.on("open", function()
 {
-  console.log(`Connected to MongoDB at: ${(DBConfig.HostName) ? DBConfig.HostName : "localhost"}`);
+  console.log(`Connected to MongoDB at: ${{DBConfig.HostName} ? DBConfig.HostName : "localhost"}`);
 });
 
 db.on("error", function()

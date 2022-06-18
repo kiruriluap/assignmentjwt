@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col">
         
-            <a href="/add" id="addButton" class="btn btn-primary" role="button"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+            <a href="/add" id class="btn btn-primary" role="button"><i class="fa fa-plus-circle" aria-hidden="true"></i>
                 Add a Contact </a>
 
         <table class="table table-striped table-bordered table-hover">
@@ -29,9 +29,9 @@
                                 <td><%= businesses[count].Number %></td>
                                 <td><%= businesses[count].Email %></td>
                                
-                                    <td class="text-center col-1 "> <a class="btn btn-warning" href="/edit/<%= businesses[count]._id %> ">
+                                    <td class="text-center col-1 "> <a class="btn btn-warning" href="/add/<%= businesses[count]._id %> ">
                                         <i class="fas fa-pencil-alt btn-sm"></i>Edit</a></td>
-                                    <td class="text-center col-1 "> <a class="btn btn-danger" href="/delete/<%= businesses[count]._id %> ">
+                                    <td class="text-center col-1 "> <a class="btn btn-danger" href="/business-list/delete/<%= businesses[count]._id %> ">
                                     <i class="fas fa-trash-alt btn-sm"></i>Delete</a></td>
                             </tr>
                     

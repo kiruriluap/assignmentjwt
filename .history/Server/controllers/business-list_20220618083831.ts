@@ -5,7 +5,7 @@ import Business from '../Models/business';
 import { UserDisplayName } from '../../Util';
 import router from '../Routes';
 
-export function DisplayBusinessList(req: express.Request, res: express.Response, next: express.NextFunction): void
+export function DisplayBusinessList(req: express.Request, res: express.Response, next: express.NextFunction)
 {
     Business.find(function(err, businessesCollection)
     {
@@ -23,7 +23,7 @@ export function DisplayAddList(req: express.Request, res: express.Response, next
     res.render('index',{title: 'add Business List', page: 'edit', business: '', displayName: UserDisplayName(req)});
 }
 
-export function ProcessAddList(req: express.Request, res: express.Response, next: express.NextFunction): void
+export function ProcessAddList(req: express.Request, res: express.Response, next: express.NextFunction)
 {
     let newBusiness = new Business
     ({

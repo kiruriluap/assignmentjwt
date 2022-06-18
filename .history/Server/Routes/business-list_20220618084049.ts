@@ -15,8 +15,8 @@ router.post('/add', AuthGuard, ProcessAddList);
 
 
 
-router.post('/edit/:mistake', AuthGuard, ProcessEditList);
+router.get('/edit/:mistake', AuthGuard, ProcessEditList);
 
-router.get('/delete/:mistake', AuthGuard, ProcessDeleteList);
+router.post('/delete/:mistake', AuthGuard, ProcessDeleteList);
 
 export default router;

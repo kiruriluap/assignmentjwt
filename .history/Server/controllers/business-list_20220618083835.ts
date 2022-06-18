@@ -5,7 +5,7 @@ import Business from '../Models/business';
 import { UserDisplayName } from '../../Util';
 import router from '../Routes';
 
-export function DisplayBusinessList(req: express.Request, res: express.Response, next: express.NextFunction): void
+export function DisplayBusinessList(req: express.Request, res: express.Response, next: express.NextFunction)
 {
     Business.find(function(err, businessesCollection)
     {
