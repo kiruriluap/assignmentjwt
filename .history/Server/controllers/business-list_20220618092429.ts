@@ -99,7 +99,7 @@ export function ProcessAddList(req: express.Request, res: express.Response, next
 	}
 	
 
-	export function ProcessDeleteList(req: express.Request, res: express.Response, next: express.NextFunction): void 
+	export function ProcessDeletePage(req: express.Request, res: express.Response, next: express.NextFunction): void 
 	{
 	  let id = req.params.id;
 	

@@ -42,7 +42,7 @@ export function DisplayEditPage(req: express.Request, res: express.Response, nex
 }
 //*********************** */
 
-export function ProcessAddList(req: express.Request, res: express.Response, next: express.NextFunction): void 
+export function ProcessAddPage(req: express.Request, res: express.Response, next: express.NextFunction): void 
 	{
 	  // instantiate a new Business to Add
 	  let newBusiness = new Business
@@ -69,7 +69,7 @@ export function ProcessAddList(req: express.Request, res: express.Response, next
 	}
 	
 
-	export function ProcessEditList(req: express.Request, res: express.Response, next: express.NextFunction): void 
+	export function ProcessEditPage(req: express.Request, res: express.Response, next: express.NextFunction): void 
 	{
 	  let id = req.params.id;
 	
@@ -99,7 +99,7 @@ export function ProcessAddList(req: express.Request, res: express.Response, next
 	}
 	
 
-	export function ProcessDeleteList(req: express.Request, res: express.Response, next: express.NextFunction): void 
+	export function ProcessDeletePage(req: express.Request, res: express.Response, next: express.NextFunction): void 
 	{
 	  let id = req.params.id;
 	

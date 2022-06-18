@@ -42,14 +42,15 @@ export function DisplayEditPage(req: express.Request, res: express.Response, nex
 }
 //*********************** */
 
-export function ProcessAddList(req: express.Request, res: express.Response, next: express.NextFunction): void 
+export function ProcessAddPage(req: express.Request, res: express.Response, next: express.NextFunction): void 
 	{
 	  // instantiate a new Business to Add
 	  let newBusiness = new Business
 	  ({
 	    "Name": req.body.businessName,
-	    "Number": req.body.businessNumber,	    
-	    "Address": req.body.businessEmail
+	    "Number": req.body.businessNumber,
+	    
+	    "Email": req.body.businessEmail
 	  });
 	
 
@@ -69,7 +70,7 @@ export function ProcessAddList(req: express.Request, res: express.Response, next
 	}
 	
 
-	export function ProcessEditList(req: express.Request, res: express.Response, next: express.NextFunction): void 
+	export function ProcessEditPage(req: express.Request, res: express.Response, next: express.NextFunction): void 
 	{
 	  let id = req.params.id;
 	
@@ -80,7 +81,7 @@ export function ProcessAddList(req: express.Request, res: express.Response, next
 	    "_id": id,
 	    "Name": req.body.businessName,
 	    "Number": req.body.businessNumber,	    
-	    "Address": req.body.businessEmail
+	    "Email": req.body.businessEmail
 	  });
 	
 
@@ -91,15 +92,16 @@ export function ProcessAddList(req: express.Request, res: express.Response, next
 	    {
 	      console.error(err);
 	      res.end(err);
-	    }	
+	    }
+	
 
-	   
+	    // edit was successful -> go to the business-list page
 	    res.redirect('/business-list');
 	  });
 	}
 	
 
-	export function ProcessDeleteList(req: express.Request, res: express.Response, next: express.NextFunction): void 
+	export function ProcessDeletePage(req: express.Request, res: express.Response, next: express.NextFunction): void 
 	{
 	  let id = req.params.id;
 	

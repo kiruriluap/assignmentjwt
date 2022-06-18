@@ -9,14 +9,14 @@ router.get('/business-list', AuthGuard, DisplayBusinessList);
 
 router.get('/add', AuthGuard, DisplayAddList);
 
-router.get('/edit/:id', AuthGuard, DisplayEditPage);
+router.get('/edit/:mistake', AuthGuard, DisplayEditage);
 
 router.post('/add', AuthGuard, ProcessAddList);
 
 
 
-router.post('/edit/:id', AuthGuard, ProcessEditList);
+router.post('/edit/:mistake', AuthGuard, ProcessEditList);
 
-router.get('/delete/:id', AuthGuard, ProcessDeleteList);
+router.get('/delete/:mistake', AuthGuard, ProcessDeleteList);
 
 export default router;
